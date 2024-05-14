@@ -6,44 +6,44 @@ export default function SideBar() {
   return (
     <div className='flex flex-col bg-[#f7f8fa] w-[80px] items-center border h-screen justify-between'>
     <div className='flex flex-col'>
-    <Link to="#" className='py-5'>
+    <Link to="#" className='py-5 transition-all hover:scale-125 duration-200 '>
       <Logo width={40} height={40} />
     </Link>
-    <Link to="#" className='py-4'>
-      <DotBox width={30} height={30} />
+    <Link to="#" className='py-4 transition-all hover:scale-125 duration-200 '>
+      <DotBox width={28} height={28} />
     </Link>
-    <Link to="#" className='py-4'>
-      <Rectangle width={30} height={30} />
+    <Link to="#" className='py-4 transition-all hover:scale-125 duration-200 '>
+      <Rectangle width={28} height={28} />
     </Link>
-    <Link to="#" className='py-4'>
-      <Person width={30} height={30} />
+    <Link to="#" className='py-4 transition-all hover:scale-125 duration-200 '>
+      <Person width={28} height={28} />
     </Link>
-    <Link to="#" className='py-4'>
-      <Cube width={30} height={30} />
+    <Link to="#" className='py-4 transition-all hover:scale-125 duration-200 '>
+      <Cube width={28} height={28} />
     </Link>  
-    <Link to="#" className='py-4'>
-      <Star width={30} height={30} />
+    <Link to="#" className='py-4 transition-all hover:scale-125 duration-200 '>
+      <Star width={28} height={28} />
     </Link>
-    <Link to="#" className='py-4'>
-      <Important width={30} height={30} />
+    <Link to="#" className='py-4 transition-all hover:scale-125 duration-200 '>
+      <Important width={28} height={28} />
     </Link>
-    <Link to="#" className='py-4'>
-      <Light width={30} height={30} />
+    <Link to="#" className='py-4 transition-all hover:scale-125 duration-200 '>
+      <Light width={28} height={28} />
     </Link>
-    <Link to="#" className='py-4'>
-      <Dark width={30} height={30} />
+    <Link to="#" className='py-4 transition-all hover:scale-125 duration-200 '>
+      <Dark width={28} height={28} />
     </Link>
 
     </div>
     <div className='flex flex-col pb-10'>
-    <Link to="#" className='py-4'>
-      <SideIn width={30} height={30} />
+    <Link to="#" className='py-4 transition-all hover:scale-125 duration-200 '>
+      <SideIn width={28} height={28} />
     </Link>
-    <Link to="#" className='py-4'>
-      <Setting width={30} height={30} />
+    <Link to="#" className='py-4 transition-all hover:scale-125 duration-200 '>
+      <Setting width={28} height={28} />
     </Link>
-    <Link to="#" className='py-4'>
-      <Logout width={30} height={30} />
+    <Link to="#" className='py-4 transition-all hover:scale-125 duration-200 '>
+      <Logout width={28} height={28} />
     </Link>
     </div>
     </div>
