@@ -1,10 +1,12 @@
 import React from 'react'
 import Logo, { Cube, Dark, DotBox, Important, Light, Logout, Person, Rectangle, Setting, SideIn, Star } from '../assets/icon'
 import { Link } from '@nextui-org/react'
+import useDarkMode from 'use-dark-mode'
 
 export default function SideBar() {
+  const darkMode = useDarkMode(false)
   return (
-    <div className='flex flex-col bg-[#f7f8fa] w-[80px] items-center border h-screen justify-between'>
+    <div className='flex flex-col bg-[#f7f8fa] w-[80px] items-center border h-screen justify-between '>
     <div className='flex flex-col'>
     <Link to="#" className='py-5 transition-all hover:scale-125 duration-200 '>
       <Logo width={40} height={40} />
@@ -28,12 +30,15 @@ export default function SideBar() {
       <Important width={28} height={28} />
     </Link>
     <Link to="#" className='py-4 transition-all hover:scale-125 duration-200 '>
+    <button onClick={darkMode.disable}>
       <Light width={28} height={28} />
+    </button>
     </Link>
     <Link to="#" className='py-4 transition-all hover:scale-125 duration-200 '>
+    <button onClick={darkMode.enable}>
       <Dark width={28} height={28} />
+    </button>
     </Link>
-
     </div>
     <div className='flex flex-col pb-10'>
     <Link to="#" className='py-4 transition-all hover:scale-125 duration-200 '>

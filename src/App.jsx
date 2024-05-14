@@ -1,13 +1,15 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import React from "react";
 import "./App.css";
 import SideBar from "./Component/SideBar.jsx";
 import NavBar from "./Component/NavBar.jsx";
+import useDarkMode from "use-dark-mode";
+
 
 function App() {
+  const darkMode = useDarkMode(false)
+  
   return (
-    <div>
+    <div className={`${darkMode.value ? 'dark' : ''} `}> 
       <div className="flex">
         <SideBar />
         <div>
