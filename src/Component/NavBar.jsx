@@ -40,7 +40,7 @@ export default function App() {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      className="border w-full justify-between py-2"
+      className="border w-full py-2 mx-auto"
     >
       <NavbarContent>
         <NavbarMenuToggle
@@ -93,7 +93,7 @@ export default function App() {
           startContent={<SearchIcon width={20} height={20} />}
           type="search"
         />
-         <DatePicker label="Birth date" className="max-w-[284px]" />
+         <DatePicker label="" className="max-w-[104px]" />
         <Dropdown placement="bottom-end">
           <DropdownTrigger>
             <Avatar

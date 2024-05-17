@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import SideBar from "./Component/SideBar.jsx";
-import NavBar from "./Component/NavBar.jsx";
+import Navbar from "./Component/Navbar.jsx";
 import useDarkMode from "use-dark-mode";
 
 
@@ -9,13 +9,11 @@ function App() {
   const darkMode = useDarkMode(false)
   
   return (
-    <div className={`${darkMode.value ? 'dark' : ''} dark:bg-blak w-full flex  `}> 
+    <div className={`${darkMode.value ? 'dark' : ''}  w-full flex bg-[#f7f8fa] `}> 
   
         <SideBar />
         <div className="w-full block">
-        <NavBar />
-
-      
+        <Navbar />
       </div>
     </div>
   );
