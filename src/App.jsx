@@ -9,13 +9,13 @@ function App() {
   const darkMode = useDarkMode(false)
   
   return (
-    <div className={`${darkMode.value ? 'dark' : ''} `}> 
-      <div className="flex">
+    <div className={`${darkMode.value ? 'dark' : ''} dark:bg-blak w-full flex  `}> 
+  
         <SideBar />
-        <div>
+        <div className="w-full block">
         <NavBar />
 
-        </div>
+      
       </div>
     </div>
   );
