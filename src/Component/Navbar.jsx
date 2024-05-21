@@ -5,6 +5,7 @@ import { parseDate } from "@internationalized/date";
 import { NotificationIcon, SearchIcon } from "../assets/icon";
 import { Avatar } from "@nextui-org/react";
 import { User } from "@nextui-org/react";
+
 import {
   Button,
   DropdownItem,
@@ -15,17 +16,19 @@ import {
 
 export default function Navbar() {
   const [value, setValue] = React.useState(parseDate("2024-06-12"));
+  const TodaysDate = React.useState( new Date().getFullYear() )
 
   return (
     <nav className="flex justify-between border px-4 h-24 items-center">
       <Link to="#">
-        <h1 className="font-medium text-black text-xl">Dashboard</h1>
+        <h1 className="font-medium text-black text-xl hover:scale-110 duration-200">Health Overview</h1>
       </Link>
       <div className="flex">
         <div className="px-3 rounded-full flex justify-center items-center ">
           <Input
             isClearable
             radius="lg"
+            aria-label="search input"
             classNames={{
               input: [
                 "bg-transparent",
@@ -61,6 +64,7 @@ export default function Navbar() {
               className="max-w-[284px] "
               value={value}
               onChange={setValue}
+              aria-label="date"
             />
           </div>
         </div>
