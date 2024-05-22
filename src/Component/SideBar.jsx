@@ -11,10 +11,10 @@ import Logo, {
   Star,
 } from "../assets/icon";
 import { Link } from "@nextui-org/react";
-import useDarkMode from "use-dark-mode";
+// import useDarkMode from "use-dark-mode";
 
 export default function SideBar() {
-  const darkMode = useDarkMode(false);
+  // const darkMode = useDarkMode(false);
   const [showSidebar, setShowSidebar] = useState(false);
 
   const toggleSidebar = () => {
@@ -62,7 +62,8 @@ export default function SideBar() {
             to="#"
             className="py-4 transition-all hover:scale-125 duration-200 "
           >
-            <button onClick={darkMode.disable}>
+          {/* onClick={darkMode.disable} */}
+            <button >
               <Light width={30} height={30} />
             </button>
           </Link>
@@ -70,7 +71,8 @@ export default function SideBar() {
             to="#"
             className="py-4 transition-all hover:scale-125 duration-200 "
           >
-            <button onClick={darkMode.enable}>
+          {/* onClick={darkMode.enable} */}
+            <button >
               <Dark width={30} height={30} />
             </button>
           </Link>
