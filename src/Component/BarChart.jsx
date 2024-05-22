@@ -15,7 +15,7 @@ class BarChart extends Component {
               borderRadius: 20,
               borderRadiusApplication: 'top',
               columnWidth: '70%',
-              barHeight: '20%',
+              barHeight: '23%',
               colors: {
                   ranges: [{
                       from: '#f8debd',
@@ -33,7 +33,7 @@ class BarChart extends Component {
           categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
         },
         fill: {
-          colors: ['#f8debd'] // try this for bar color
+          colors: ['#F8CBA6'] // try this for bar color
         }
       },
       series: [
