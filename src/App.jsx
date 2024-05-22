@@ -2,18 +2,20 @@ import React from "react";
 import "./App.css";
 import SideBar from "./Component/SideBar.jsx";
 import Navbar from "./Component/Navbar.jsx";
-import useDarkMode from "use-dark-mode";
+// import useDarkMode from "use-dark-mode";
+import BarChart from "./Component/BarChart.jsx";
 
 
 function App() {
-  const darkMode = useDarkMode(false)
+  // const darkMode = useDarkMode(false)
   
   return (
-    <div className={`${darkMode.value ? 'dark' : ''}  w-full flex bg-[#f7f8fa] `}> 
-  
+    // ${darkMode.value ? 'dark' : ''}
+    <div className={`  w-full flex bg-[#fffcf8] `}> 
         <SideBar />
         <div className="w-full block">
         <Navbar />
+        <BarChart />
       </div>
     </div>
   );

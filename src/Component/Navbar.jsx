@@ -5,6 +5,7 @@ import { parseDate } from "@internationalized/date";
 import { NotificationIcon, SearchIcon } from "../assets/icon";
 import { Avatar } from "@nextui-org/react";
 import { User } from "@nextui-org/react";
+
 import {
   Button,
   DropdownItem,
@@ -15,17 +16,19 @@ import {
 
 export default function Navbar() {
   const [value, setValue] = React.useState(parseDate("2024-06-12"));
+  const TodaysDate = React.useState( new Date().getFullYear() )
 
   return (
     <nav className="flex justify-between border px-4 h-24 items-center">
       <Link to="#">
-        <h1 className="font-medium text-black text-xl">Dashboard</h1>
+        <h1 className="font-medium text-black md:text-2xl text-base hover:scale-110 duration-200">Health Overview</h1>
       </Link>
       <div className="flex">
-        <div className="px-3 rounded-full flex justify-center items-center ">
+        <div className="px-3 rounded-full md:flex justify-center items-center hidden ">
           <Input
             isClearable
             radius="lg"
+            aria-label="search input"
             classNames={{
               input: [
                 "bg-transparent",
@@ -56,16 +59,17 @@ export default function Navbar() {
           />
         </div>
         <div>
-          <div className="w-full flex item-center justify-center gap-y-2 pt-2 px-5">
+          <div className="w-full sm:flex hidden item-center justify-center gap-y-2 pt-2 px-5">
             <DatePicker
               className="max-w-[284px] "
               value={value}
               onChange={setValue}
+              aria-label="date"
             />
           </div>
         </div>
         <div className="py-2 pr-5">
-          <div className="h-10 w-10 bg-transparent rounded-full  border-2 flex items-center justify-center ">
+          <div className="h-10 hidden w-10 bg-transparent rounded-full  border-2 sm:flex items-center justify-center ">
             <NotificationIcon width="15" height="15" />
           </div>
         </div>
