@@ -8,7 +8,11 @@ class BarChart extends Component {
     this.state = {
       options: {
         chart: {
-          id: "basic-bar"
+          id: "basic-bar",
+          width: "10%",
+          height: '400px',
+          offsetX: '10%',
+          offsetY: '100%',
         },
         plotOptions: {
           bar: {
@@ -47,14 +51,15 @@ class BarChart extends Component {
 
   render() {
     return (
-      <div className="app">
+      <div className="app w-5/6">
         <div className="row">
-          <div className="mixed-chart rounded-md">
+          <div className="mixed-chart rounded-md w-5/6">
             <Chart
               options={this.state.options}
               series={this.state.series}
               type="bar"
               width="500"
+              className=""
             />
           </div>
         </div>
