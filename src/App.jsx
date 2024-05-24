@@ -4,6 +4,8 @@ import SideBar from "./Component/SideBar.jsx";
 import Navbar from "./Component/Navbar.jsx";
 // import useDarkMode from "use-dark-mode";
 import BarChart from "./Component/BarChart.jsx";
+import BoxBar from "./Component/BoxBar.jsx";
+import { BloodSugarIcon } from "./assets/icon.jsx";
 
 
 function App() {
@@ -15,7 +17,15 @@ function App() {
         <SideBar />
         <div className="w-full block">
         <Navbar />
+        <div className="flex justify-center">
         <BarChart />
+        <div className="grid grid-cols-2 justify-between m-2">
+         <BoxBar text='Blood Sugar' unit='80' smallText='Normal' img={<BloodSugarIcon />}/> 
+         <BoxBar text='Blood Sugar' unit='80' smallText='Normal' img={<BloodSugarIcon />}/> 
+         <BoxBar text='Blood Sugar' unit='80' smallText='Normal' img={<BloodSugarIcon />}/> 
+         <BoxBar text='Blood Sugar' unit='80' smallText='Normal' img={<BloodSugarIcon />}/> 
+        </div>
+        </div>
       </div>
     </div>
   );

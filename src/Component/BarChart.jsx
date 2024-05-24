@@ -79,7 +79,7 @@ class BarChart extends React.Component {
     
       series: [
         {
-          name: 'Actual',
+          name: '',
           data: [
             {
               x: 'Jan',
@@ -142,6 +142,7 @@ class BarChart extends React.Component {
             columnWidth: '40%',
             borderRadius: 10,
             borderRadiusApplication: 'top',
+            columnWidth: '50%',
           }
         },
         colors: ['#FEAE6F'],
@@ -161,7 +162,7 @@ class BarChart extends React.Component {
 
   render() {
     return (
-      <div className="bg-white shadow-md m-5 p-6 w-2/4 rounded-md">
+      <div className="bg-white shadow-md m-5 p-6 w-2/4 rounded-md border-slate-100 border">
       <div className="flex justify-between">
         <div>Activity Growth</div>
         <div>filter</div>
@@ -175,10 +176,5 @@ class BarChart extends React.Component {
   }
 }
 
-// const domContainer = document.querySelector('#app');
-// ReactDOM.render(React.createElement(ApexChart), domContainer);
 
 export default BarChart;
-
-// const domContainer = document.querySelector('#app');
-// ReactDOM.render(React.createElement(ApexChart), domContainer);
