@@ -17,14 +17,15 @@ console.log(test.trim())
       <SideBar />
       <div className="w-full block">
         <Navbar />
-        <div className="lg:flex justify-center">
+        <div className="lg:flex w-full justify-center">
           <BarChart />
           <BoxBars />
         </div>
-        <div className="m-5">
+        <div className="flex justify-center w-4/5 m-auto items-center">
           <Table />
-
+          <Table />
         </div>
+    
       </div>
     </div>
   );
