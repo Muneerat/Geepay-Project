@@ -26,7 +26,7 @@ export default function SideBar() {
         className={`flex-col bg-[#fff] w-[94px] items-center border h-screen justify-between rounded-ful rounded-l-3xl ${showSidebar ? ' hidden ' : 'md:flex '} `}
         onClick={toggleSidebar}
       >
-        <div className="flex flex-col">
+        <div className="flex flex-col ">
           <Link
             to="#"
             className="py-6 transition-all hover:scale-125 duration-200 cursor-pointer"

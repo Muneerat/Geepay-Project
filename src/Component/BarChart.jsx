@@ -140,10 +140,10 @@ class BarChart extends React.Component {
         plotOptions: {
           bar: {
             columnWidth: '40%',
-            borderRadius: 10,
+            borderRadius: 15,
             borderRadiusApplication: 'top',
             columnWidth: '50%',
-          }
+          },
         },
         colors: ['#FEAE6F'],
         dataLabels: {
@@ -158,11 +158,9 @@ class BarChart extends React.Component {
     };
   }
 
-
-
   render() {
     return (
-      <div className="bg-white shadow-md m-5 p-6 w-2/4 rounded-md border-slate-100 border">
+      <div className="bg-white shadow-md m-5 p-6 lg:w-2/4 rounded-md border-slate-100 border">
       <div className="flex justify-between">
         <div>Activity Growth</div>
         <div>filter</div>

@@ -4,47 +4,21 @@ import SideBar from "./Component/SideBar.jsx";
 import Navbar from "./Component/Navbar.jsx";
 // import useDarkMode from "use-dark-mode";
 import BarChart from "./Component/BarChart.jsx";
-import BoxBar from "./Component/BoxBar.jsx";
-import { BloodSugarIcon } from "./assets/icon.jsx";
+import BoxBars from "./Component/BoxBars.jsx";
 
 function App() {
   // const darkMode = useDarkMode(false)
-
+const test = "Yes Some of the reason I think it has demonstrated a positive impact on Cardano ecosystem is that I believe this talents, will enhance day-to-day activities in the ecosystem By providing tools for learning and upskilling And it’s can also be used to reduce stress and efficient to work for hiring of individuals This can also be used to make day today activity like collection of CV and other feedback online easier and interaction  with users easier."
+console.log(test.trim())
   return (
     // ${darkMode.value ? 'dark' : ''}
     <div className={`  w-full flex bg-[#fffcf8] `}>
       <SideBar />
       <div className="w-full block">
         <Navbar />
-        <div className="flex justify-center">
+        <div className="lg:flex justify-center">
           <BarChart />
-          <div className="grid grid-cols-2 justify-between m-1">
-            <BoxBar
-              text="Blood Sugar"
-              unit="80"
-              smallText="Normal"
-              img={<BloodSugarIcon />}
-              innerClass='bg-[#f8debd]'
-            />
-            <BoxBar
-              text="Blood Sugar"
-              unit="80"
-              smallText="Normal"
-              img={<BloodSugarIcon />}
-            />
-            <BoxBar
-              text="Blood Sugar"
-              unit="80"
-              smallText="Normal"
-              img={<BloodSugarIcon />}
-            />
-            <BoxBar
-              text="Blood Sugar"
-              unit="80"
-              smallText="Normal"
-              img={<BloodSugarIcon />}
-            />
-          </div>
+          <BoxBars />
         </div>
       </div>
     </div>
