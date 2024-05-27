@@ -5,6 +5,7 @@ import Navbar from "./Component/Navbar.jsx";
 // import useDarkMode from "use-dark-mode";
 import BarChart from "./Component/BarChart.jsx";
 import BoxBars from "./Component/BoxBars.jsx";
+import Table from "./Component/Table.jsx";
 
 function App() {
   // const darkMode = useDarkMode(false)
@@ -19,6 +20,10 @@ console.log(test.trim())
         <div className="lg:flex justify-center">
           <BarChart />
           <BoxBars />
+        </div>
+        <div className="m-5">
+          <Table />
+
         </div>
       </div>
     </div>
