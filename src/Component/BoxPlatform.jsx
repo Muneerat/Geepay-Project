@@ -17,14 +17,14 @@ class BoxPlatform extends React.Component {
 
       this.state = {
       
-        // series: 
-        //   [90, 55,],
-        series: [
-            {
-                name: "Series 1",
-                data: [45, 52, 38, 24, 33, 26, 21, 20, 6, 8, 15, 10]
-            }
-        ],
+        series: 
+          [90, 55,],
+        // series: [
+        //     {
+        //         name: "Series 1",
+        //         data: [45, 52, 38, 24, 33, 26, 21, 20, 6, 8, 15, 10]
+        //     }
+        // ],
         // series: [{
         //     name: "series-a",
         //     data: [13, 12 ],
