@@ -17,7 +17,7 @@ function App() {
       <SideBar />
       <div className="w-full block">
         <Navbar />
-        <div className="max-w-screen-2xl max-w- m-auto overflow-auto" style={{height: `calc(-100px + 100vh)`, width: `calc(-80px + 100vw)` }}>
+        <div className="max-w-screen-2xl max-w- m-auto overflow-auto scroll" style={{height: `calc(-100px + 100vh)`, width: `calc(-80px + 100vw)` }}>
         <div className="lg:flex w-full justify-center">
           <BarChart />
           <BoxBars />
