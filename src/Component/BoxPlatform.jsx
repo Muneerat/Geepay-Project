@@ -38,7 +38,7 @@ class BoxPlatform extends React.Component {
           },
 
 fill: {
-    colors: ['#feba84', '#ba3237']
+    colors: ['#00e396', '#008ffb']
   },
           responsive: [{
             breakpoint: 480,
