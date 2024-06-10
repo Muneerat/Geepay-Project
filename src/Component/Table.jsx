@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Table() {
   return (
-    <div className="w-full md:w-[66%] relative overflow-x-auto shadow-lg sm:rounded-lg ml-4">
+    <div className="w-full lg:w-[66%] relative overflow-x-auto shadow-lg sm:rounded-lg ml-4">
       <table className=" w-full text-sm text-left rtl:text-right text-black/60">
         <thead className="text-xs text-black/70 uppercase bg-white">
           <tr>
