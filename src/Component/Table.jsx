@@ -1,4 +1,7 @@
+import { Modal } from "@nextui-org/react";
 import React from "react";
+import Modals from "./Modal";
+import Payment from "./Payment";
 
 export default function Table() {
   return (
@@ -42,12 +45,9 @@ export default function Table() {
             <td className="px-6 py-4 font-semibold">$80,000</td>
             <td className="px-6 py-4 text-blue-700">Paid</td>
             <td className="px-6 py-4">
-              <a
-                href="#"
-                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-              >
-                View
-              </a>
+             <Modals >
+              <Payment amount='89' status='paid' className="text-red-500"/>
+             </Modals>
             </td>
           </tr>  
           <tr className=" bg-white border-3 dark:border-gray-200 hover:bg-gray-100">
@@ -68,12 +68,7 @@ export default function Table() {
             <td className="px-6 py-4 font-semibold">$80,000</td>
             <td className="px-6 py-4 text-red-700">Refund</td>
             <td className="px-6 py-4">
-              <a
-                href="#"
-                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-              >
-                View
-              </a>
+              <Modals />
             </td>
           </tr>
           <tr className=" bg-white border-3 dark:border-gray-200 hover:bg-gray-100">
@@ -94,12 +89,7 @@ export default function Table() {
             <td className="px-6 py-4 font-semibold">$80,000</td>
             <td className="px-6 py-4 text-blue-700">Paid</td>
             <td className="px-6 py-4">
-              <a
-                href="#"
-                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-              >
-                View
-              </a>
+            <Modals />
             </td>
           </tr>  
           <tr className=" bg-white border-3 dark:border-gray-200 hover:bg-gray-100">
@@ -120,12 +110,7 @@ export default function Table() {
             <td className="px-6 py-4 font-semibold">$80,000</td>
             <td className="px-6 py-4 text-red-700">Refund</td>
             <td className="px-6 py-4">
-              <a
-                href="#"
-                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-              >
-                View
-              </a>
+            <Modals />
             </td>
           </tr>
         

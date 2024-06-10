@@ -160,7 +160,7 @@ class BarChart extends React.Component {
 
   render() {
     return (
-      <div className="bg-white shadow-md my-5 md:m-5 md:p-6 lg:w-4/6 rounded-md border-slate-100 border">
+      <div className="bg-white shadow-md my-5 mx-3 md:m-5 md:p-6 lg:w-4/6 rounded-md border-slate-100 border">
       <div className="flex justify-between">
         <div>Activity Growth</div>
         <div>filter</div>

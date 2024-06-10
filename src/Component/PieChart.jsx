@@ -61,7 +61,7 @@ fill: {
 
     render() {
       return (
-        <div className='shadow-md bg-white rounded-md lg:w-2/6 m-3'>
+        <div className='shadow-md bg-white rounded-md lg:w-2/6 md:m-3 m-2'>
           <div id="chart">
             <ReactApexChart options={this.state.options} series={this.state.series} type="donut" />
           </div>
