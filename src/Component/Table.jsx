@@ -2,6 +2,7 @@ import { Modal } from "@nextui-org/react";
 import React from "react";
 import Modals from "./Modal";
 import Payment from "./Payment";
+import TableRow from "./TableRow";
 
 export default function Table() {
   return (
@@ -27,93 +28,53 @@ export default function Table() {
           </tr>
         </thead>
         <tbody>
-          <tr className=" bg-white border-3 dark:border-gray-200 hover:bg-gray-100">
-            <th
-              scope="row"
-              className="flex items-center px-6 py-4 whitespace-nowrap"
-            >
-              <img
-                className="w-10 h-10 rounded-full"
-                src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                alt="Jese image"
-              />
-              <div className="ps-3">
-                <div className="text-base font-semibold">Corey Schleifer</div>
-              </div>
-            </th>
-            <td className="px-6 py-4">Jul 15, 2023</td>
-            <td className="px-6 py-4 font-semibold">$80,000</td>
-            <td className="px-6 py-4 text-blue-700">Paid</td>
-            <td className="px-6 py-4">
-             <Modals >
-              <Payment amount='89' status='paid' className="text-red-500"/>
-             </Modals>
-            </td>
-          </tr>  
-          <tr className=" bg-white border-3 dark:border-gray-200 hover:bg-gray-100">
-            <th
-              scope="row"
-              className="flex items-center px-6 py-4 whitespace-nowrap"
-            >
-              <img
-                className="w-10 h-10 rounded-full"
-                src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                alt="Jese image"
-              />
-              <div className="ps-3">
-                <div className="text-base font-semibold">Corey Schleifer</div>
-              </div>
-            </th>
-            <td className="px-6 py-4">Jul 15, 2023</td>
-            <td className="px-6 py-4 font-semibold">$80,000</td>
-            <td className="px-6 py-4 text-red-700">Refund</td>
-            <td className="px-6 py-4">
-              <Modals />
-            </td>
-          </tr>
-          <tr className=" bg-white border-3 dark:border-gray-200 hover:bg-gray-100">
-            <th
-              scope="row"
-              className="flex items-center px-6 py-4 whitespace-nowrap"
-            >
-              <img
-                className="w-10 h-10 rounded-full"
-                src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                alt="Jese image"
-              />
-              <div className="ps-3">
-                <div className="text-base font-semibold">Corey Schleifer</div>
-              </div>
-            </th>
-            <td className="px-6 py-4">Jul 15, 2023</td>
-            <td className="px-6 py-4 font-semibold">$80,000</td>
-            <td className="px-6 py-4 text-blue-700">Paid</td>
-            <td className="px-6 py-4">
-            <Modals />
-            </td>
-          </tr>  
-          <tr className=" bg-white border-3 dark:border-gray-200 hover:bg-gray-100">
-            <th
-              scope="row"
-              className="flex items-center px-6 py-4 whitespace-nowrap"
-            >
-              <img
-                className="w-10 h-10 rounded-full"
-                src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                alt="Jese image"
-              />
-              <div className="ps-3">
-                <div className="text-base font-semibold">Corey Schleifer</div>
-              </div>
-            </th>
-            <td className="px-6 py-4">Jul 15, 2023</td>
-            <td className="px-6 py-4 font-semibold">$80,000</td>
-            <td className="px-6 py-4 text-red-700">Refund</td>
-            <td className="px-6 py-4">
-            <Modals />
-            </td>
-          </tr>
-        
+          <TableRow
+            name="Corey Schleifer"
+            date="Jul 15, 2024"
+            amount="$80,000"
+            status="paid"
+            imagePath='https://i.pravatar.cc/150?u=a042581f4e29026024d'
+          >
+            <Payment amount="$80,000" status="paid" />
+          </TableRow>
+          <TableRow
+            name="Marcus Bergson"
+            date="Jul 15, 2024"
+            amount="$150,000"
+            status="Refund"
+            statusClass="text-red-700"
+            imagePath='https://i.pravatar.cc/150?u=a042581f4e29026024d'
+          >
+            <Payment amount="$150,000" status="paid" className="text-red-700" />
+          </TableRow>
+          <TableRow
+            name="Jaydon Vaccaro"
+            date="Jul 15, 2024"
+            amount="$87,000"
+            status="paid"
+            imagePath='https://i.pravatar.cc/150?u=a04258114e29026302d'
+          >
+            <Payment amount="$87,000" status="paid" />
+          </TableRow>
+          <TableRow
+            name="Phillip Lubin"
+            date="Jul 10, 2024"
+            amount="$78,000"
+            status="Refund"
+            statusClass="text-red-700"
+            imagePath='https://i.pravatar.cc/150?u=a04258114e29026302d'
+          >
+            <Payment amount="$78,000" status="paid" className="text-red-500" />
+          </TableRow>
+          <TableRow
+            name="Cooper Press"
+            date="Jul 18, 2024"
+            amount="$107,000"
+            status="paid"
+            imagePath='https://i.pravatar.cc/150?u=a04258a2462d826712d'
+          >
+            <Payment amount="$107,000" status="paid" />
+          </TableRow>
         </tbody>
       </table>
     </div>

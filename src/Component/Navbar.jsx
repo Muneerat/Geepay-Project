@@ -60,7 +60,7 @@ export default function Navbar() {
           />
         </div>
         <div>
-          <div className="w-full sm:flex hidden item-center justify-center gap-y-2 pt-2 px-5">
+          <div className="w-full sm:flex hidden item-center justify-center gap-y-2 pt-2 px-5 bg">
             <DatePicker
               className="max-w-[284px] "
               value={value}

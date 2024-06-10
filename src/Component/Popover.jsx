@@ -6,7 +6,7 @@ export default function Popovers() {
   return (
     <Popover placement="bottom" showArrow={true} className="p-0">
       <PopoverTrigger>
-        <Button className=" min-w-5 h-10 rounded-full "><NotificationIcon width="15" height="15" /></Button>
+        <Button className=" min-w-5 h-9 rounded-full bg-white"><NotificationIcon width="15" height="15" /></Button>
       </PopoverTrigger>
       <PopoverContent>
         <div className="px-1 py-1">
