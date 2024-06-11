@@ -45,7 +45,7 @@ export default function Table() {
             statusClass="text-red-700"
             imagePath='https://i.pravatar.cc/150?u=a042581f4e29026024d'
           >
-            <Payment amount="$150,000" status="paid" className="text-red-700" />
+            <Payment amount="$150,000" status="Refund" className="text-red-700" />
           </TableRow>
           <TableRow
             name="Jaydon Vaccaro"
@@ -64,7 +64,7 @@ export default function Table() {
             statusClass="text-red-700"
             imagePath='https://i.pravatar.cc/150?u=a04258114e29026302d'
           >
-            <Payment amount="$78,000" status="paid" className="text-red-500" />
+            <Payment amount="$78,000" status="Refund" className="text-red-500" />
           </TableRow>
           <TableRow
             name="Cooper Press"

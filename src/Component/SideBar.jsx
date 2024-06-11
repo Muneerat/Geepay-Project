@@ -29,14 +29,14 @@ export default function SideBar() {
         <div className="flex flex-col ">
           <Link
             to="#"
-            className="py-6 transition-all hover:scale-125 duration-200 cursor-pointer"
+            className="py-6 transition-all hover:scale-125 duration-200 cursor-pointer "
             onClick={toggleSidebar}
           >
             <Logo width={42} height={42} />
           </Link>
           <Link
             to="#"
-            className="py-4 transition-all hover:scale-125 duration-200 "
+            className="py-4 transition-all hover:scale-125 duration-200"
           >
             <DotBox width={30} height={30} />
           </Link>
