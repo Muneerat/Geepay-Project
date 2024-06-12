@@ -11,6 +11,7 @@ import Logo, {
   Star,
 } from "../assets/icon";
 import { Link } from "@nextui-org/react";
+import LogoutModal from "./LoginOutModal";
 // import useDarkMode from "use-dark-mode";
 
 export default function SideBar() {
@@ -26,7 +27,7 @@ export default function SideBar() {
         className={`flex-col bg-[#fff] w-[94px] items-center border h-screen justify-between rounded-ful rounded-l-3xl ${showSidebar ? ' hidden ' : 'md:flex '} `}
         onClick={toggleSidebar}
       >
-        <div className="flex flex-col ">
+        <div className="flex flex-col justify-center ">
           <Link
             to="#"
             className="py-6 transition-all hover:scale-125 duration-200 cursor-pointer "
@@ -77,7 +78,7 @@ export default function SideBar() {
             </button>
           </Link>
         </div>
-        <div className="flex flex-col pb-10">
+        <div className="flex flex-col pb-10 justify-center items-center">
           <Link
             to="#"
             className="py-4 transition-all hover:scale-125 duration-200 "
@@ -95,7 +96,8 @@ export default function SideBar() {
             to="#"
             className="py-4 transition-all hover:scale-125 duration-200 "
           >
-            <Logout width={30} height={30} />
+            {/* <Logout width={30} height={30} /> */}
+            <LogoutModal />
           </Link>
         </div>
       </div>
@@ -106,6 +108,7 @@ export default function SideBar() {
             className="py-6 px-2 transition-all hover:scale-110 duration-200"
             onClick={toggleSidebar}
           >
+         
             <Logo width={38} height={38} />
           </Link>
         </div>
