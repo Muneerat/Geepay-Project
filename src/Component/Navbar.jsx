@@ -13,6 +13,7 @@ import {
   Dropdown,
   DropdownMenu,
 } from "@nextui-org/react";
+import Popover from "./Popover";
 
 export default function Navbar() {
   const [value, setValue] = React.useState(parseDate("2024-06-12"));
@@ -59,7 +60,7 @@ export default function Navbar() {
           />
         </div>
         <div>
-          <div className="w-full sm:flex hidden item-center justify-center gap-y-2 pt-2 px-5">
+          <div className="w-full sm:flex hidden item-center justify-center gap-y-2 pt-2 px-5 bg">
             <DatePicker
               className="max-w-[284px] "
               value={value}
@@ -70,7 +71,8 @@ export default function Navbar() {
         </div>
         <div className="py-2 pr-5">
           <div className="h-10 hidden w-10 bg-transparent rounded-full  border-2 sm:flex items-center justify-center ">
-            <NotificationIcon width="15" height="15" />
+          <Popover />
+            
           </div>
         </div>
         <div className="bg-whit flex text-center border p-2 rounded-full">
